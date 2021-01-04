@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>C:\Users\HSD1\Desktop\ANOVA\ANOVA\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Compile Update="Frontend\AnovaCalculationWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Frontend\AnovaWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Frontend\ChooseModeWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Frontend\MonteCarloCalculationWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Frontend\MonteCarloSimulationWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Frontend\AnovaCalculationWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Frontend\AnovaWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Frontend\ChooseModeWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Frontend\Controls\GoBackControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Frontend\MonteCarloCalculationWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Frontend\MonteCarloSimulationWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

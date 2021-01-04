@@ -1,0 +1,25 @@
+﻿<Window x:Class="ANOVA.Frontend.ChooseModeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ANOVA.Frontend"
+        mc:Ignorable="d"
+        Title="Computer performance" Height="600" Width="900" WindowStartupLocation="CenterScreen " Background="Black">
+
+    <Border Background="#1f262a" CornerRadius="10" Margin="225 80 225 80">
+        <StackPanel Margin="30,20,30,30">
+            <TextBlock Text="Computer performanse" Foreground="#fff" HorizontalAlignment="Center" FontSize="20"/>
+            <Separator Margin="0 5 0 5"></Separator>
+            <TextBlock Text="ANOVA" HorizontalAlignment="Center" Foreground="#fff" Width="68"/>
+            <TextBlock Text="If you want to compare many systems, based on your examinations, use ANOVA (that compares systems in total) and tehnique of contrast (that compares each system separately with one another)." TextWrapping="Wrap" FontSize="11" Foreground="#eee" Background="#1f262a" Margin="0 8 0 0" Height="53" RenderTransformOrigin="0.5,0.5">
+         
+            </TextBlock>
+            <TextBlock Text="Monte Carlo Simulation" Foreground="#fff" Margin="0 5 0 0" TextWrapping="Wrap" HorizontalAlignment="Center"/>
+            <TextBlock Text="If you want to calculate value of Pi, with specific precision, use Monte Carlo Simulation." FontSize="11" Foreground="#eee" Background="#1f262a" TextWrapping="Wrap"  Margin="0 8 0 0" Height="29"/>
+            <Button x:Name="AnovaButton" IsDefault="True" Content="ANOVA" FontSize="16" Foreground="#fff" Background="#1f262a" Margin="60 20 " Height="33" Click="AnovaButton_Click"/>
+            <TextBlock Text="or" Foreground="#fff" HorizontalAlignment="Center" FontSize="14" />
+            <Button x:Name="MonteCarloButton" Content="Monte Carlo Simulation" FontSize="16" Foreground="#fff" Background="#1f262a" Margin="60 20 " Height="33" Click="MonteCarloButton_Click"/>
+        </StackPanel>
+    </Border>
+</Window>

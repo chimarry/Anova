@@ -1,0 +1,36 @@
+﻿<Window x:Class="ANOVA.Frontend.MonteCarloCalculationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ANOVA.Frontend" xmlns:controls ="clr-namespace:ANOVA.Frontend.Controls"
+        mc:Ignorable="d"
+        Title="Computer performance" Height="600" Width="900" WindowStartupLocation="CenterScreen " Background="Black">
+    <Border Background="#1f262a" CornerRadius="10" Margin="170,80,148,80">
+        <StackPanel Margin="30,20,30,30">
+            <TextBlock Text="Monte Carlo Simulation" Foreground="#fff" HorizontalAlignment="Center" FontSize="20"/>
+            <Separator Margin="0 5 0 5"></Separator>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock x:Name="NumberText" Text="Number of decimals" Foreground="#fff" HorizontalAlignment="Center" FontSize="16" Margin="10 40 10 10"/>
+                <TextBox x:Name="NumberBox" Margin="10 40 10 10" Background="Transparent" Foreground="White" FontSize="16" Width="98" PreviewTextInput="NumberBox_PreviewTextInput"></TextBox>
+                <Button x:Name="CalculateButton" Margin="10 40 10 10" Content ="Calculate Pi" IsDefault="True"  FontSize="16" Foreground="#fff" Background="#1f262a" Height="36" Width="127" Click="CalculateButton_Click"/>
+            </StackPanel>
+            <Separator Margin="0 5 0 5"></Separator>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Calculated Pi:  " Foreground="#fff" HorizontalAlignment="Left" FontSize="20"/>
+                <TextBlock x:Name="PiValue" FontSize="20" Foreground="White" TextWrapping="Wrap"  Width="390" Height="28" ></TextBlock>
+            </StackPanel>
+            <Separator Margin="0 5 0 5"></Separator>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Original PI:  " Foreground="#fff" HorizontalAlignment="Left" FontSize="20" Margin="0 10 0 0"/>
+                <TextBlock x:Name="OriginalPiValue" FontSize="20" Foreground="White" TextWrapping="Wrap" Margin="0 10 0 0" Width="419" Height="28" ></TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Number of points in circle:  " Foreground="#fff" HorizontalAlignment="Left" Margin="0 10 0 0" FontSize="20" />
+                <TextBlock x:Name="NumberOfDots" FontSize="20" Foreground="White" TextWrapping="Wrap"  Margin="0 10 0 0" Width="288" Height="28" ></TextBlock>
+            </StackPanel>
+            <TextBlock x:Name="Process" FontSize="20" Foreground="White" TextWrapping="Wrap" Width="288" Height="28" Margin="20" ></TextBlock>
+            <controls:GoBackControl Width="142"/>
+        </StackPanel>
+    </Border>
+</Window>

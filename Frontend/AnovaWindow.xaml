@@ -1,0 +1,21 @@
+﻿<Window x:Class="ANOVA.Frontend.AnovaWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ANOVA.Frontend" xmlns:controls="clr-namespace:ANOVA.Frontend.Controls"
+        mc:Ignorable="d"
+        Title="Computer performance" Height="600" Width="900" WindowStartupLocation="CenterScreen " Background="Black">
+    <Border Background="#1f262a" CornerRadius="10" Margin="225 80 225 80">
+        <StackPanel Margin="30,20,30,30">
+            <TextBlock Text="Enter start values" Foreground="#fff" HorizontalAlignment="Center" FontSize="20"/>
+            <Separator Margin="0 5 0 5"></Separator>
+            <TextBlock Text="Number of alternatives" HorizontalAlignment="Center" Foreground="#fff" Width="148"/>
+            <TextBox x:Name="SystemsCountTextBox" TextWrapping="Wrap" FontSize="11" Foreground="#eee" Background="#1f262a" Margin="0 8 0 0" Height="29" Width="59" PreviewTextInput="SystemsCountTextBox_PreviewTextInput"/>
+            <TextBlock Text="Number of measurements" Foreground="#fff" Margin="0 5 0 0" TextWrapping="Wrap" HorizontalAlignment="Center"/>
+            <TextBox x:Name="MeasurementsCountTextBox" FontSize="11" Foreground="#eee" Background="#1f262a" TextWrapping="Wrap"  Margin="0 8 0 0" Height="29" Width="54" PreviewTextInput="MeasurementsCountTextBox_PreviewTextInput" />
+            <Button x:Name="CalculateButton" Content ="Procede to calculation" IsDefault="True"  FontSize="16" Foreground="#fff" Background="#1f262a" Margin="60 20 " Height="33" Width="195" Click="CalculateButton_Click"/>
+            <controls:GoBackControl Width="142"/>
+        </StackPanel>
+    </Border>
+</Window>

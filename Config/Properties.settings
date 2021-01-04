@@ -1,0 +1,41 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings>
+    <Setting Name="ButtonProportion" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">0.8</Value>
+    </Setting>
+    <Setting Name="FontFamily" Type="System.Windows.Media.FontFamily" Scope="Application">
+      <Value Profile="(Default)">new FontFamiliy("Century Gothic")</Value>
+    </Setting>
+    <Setting Name="ButtonFontSize" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">15</Value>
+    </Setting>
+    <Setting Name="WindowHeightProportion" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="WindowWidthProportion" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="NumberOfRecordsPerPage" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">5</Value>
+    </Setting>
+    <Setting Name="FontColor" Type="System.Windows.Media.Color" Scope="Application">
+      <Value Profile="(Default)">#FFFFFFFF</Value>
+    </Setting>
+    <Setting Name="LabelFontSize" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">13</Value>
+    </Setting>
+    <Setting Name="ButtonColor" Type="System.Windows.Media.Color" Scope="User">
+      <Value Profile="(Default)">#FF1F262A</Value>
+    </Setting>
+    <Setting Name="TotalNumberOfQuestions" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="City" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Banja Luka</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
